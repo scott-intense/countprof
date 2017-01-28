@@ -9,6 +9,9 @@ clang countprof.c -shared -fPIC -o countprof.so
 local prof = require'countprof'
 
 prof.start()
+
 -- ...
+
 prof.stop()
+
 prof.dump() -- writes to {pid}.cp
